@@ -8,8 +8,10 @@
  * the two digits must be different
  * 01 and 10 are considered the same combination of the two digits 0 and 1
  * prints only the smallest combination of two digits
- * numbers should be prited in ascending order, with two digits
- * you can only use the putchar function, a maximum of 5 times in your code
+ * numbers should be printed in ascending order, with two digits
+ * you can only use the putchar function
+ * (every other function (printf, puts, etc...) is forbidden)
+ * you can only use putchar five times maximum in your code
  * You are not allowed to use any variable of type char
  * all you code should be in the main function
  * Return: always 0
@@ -31,10 +33,11 @@ int main(void)
 
 				if (c + d != 17)
 				{
-					putchar(');
-					putchar( );
+					putchar(',');
+					putchar(' ');
 				}
 			}
+
 			c++;
 		}
 		d++;
