@@ -28,7 +28,7 @@ if (i > 0 && str[i] == ' ' && str[i - 1] != ' ')
 flag = 0;
 len++;
 }
-i++
+i++;
 }
 
 len += flag == 1 ? 1 : 0;
