@@ -21,10 +21,9 @@ ssize_t read_textfile(const char *textfile, size_t n)
 		return (0);
 	buf = malloc(sizeof(char) * n);
 	t = read(fd, buf, n);
-	w = write(STDOUT_FILENO, buf, t);
+	c = write(STDOUT_FILENO, buf, t);
 
 	free(buf);
 	close(fd);
 	return (c);
 }
-
